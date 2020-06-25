@@ -1,2 +1,2 @@
-# Furnuture
+# Furniture
 Интернет магазин мебели
