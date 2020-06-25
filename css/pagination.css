@@ -1,0 +1,81 @@
+.page-item {
+	border-radius: 50px;
+}
+.page-link {
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    padding: .5rem;
+    margin-left: -1px;
+    line-height: 1;
+    font-size: 20px;
+    color: #0F3043;
+    background-color: transparent;
+    border: 1px solid #165781;
+    border-radius: 50px;
+    transition: .3s;
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.page-item .page-link.active {
+	background: #165781;
+	color: #fff;
+}
+.page-item .page-link:hover {
+	background: #165781;
+	color: #fff;
+	transition: .3s;
+}
+.paginat .next,
+.paginat .prev {
+	color: #8D8D8D;
+}
+.paginat .next:hover,
+.paginat .prev:hover {
+	color: #0F3043;
+}
+.paginat .next.active {
+	font-weight: 700;
+	color: #0F3043;
+}
+
+@media (max-width: 575px) {
+    .page-link {
+        width: 25px;
+        height: 25px;
+        line-height: .6;
+        font-size: 16px;
+        padding: .5rem .2rem;
+    }
+    .paginat .next,
+    .paginat .prev {
+        font-size: 14px;
+    }
+}
+@media (max-width: 414px) {
+    .paginat .next,
+    .paginat .prev {
+        position: absolute;
+    }
+    .paginat .next {
+        top: -1rem;
+        right: 0;
+    }
+    .paginat .prev {
+        top: -1rem;
+        left: 0;
+        
+    }
+    .paginat ul {
+        margin: auto;
+    }
+}

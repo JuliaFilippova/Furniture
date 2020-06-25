@@ -1,0 +1,71 @@
+.card-product {
+	border: 3px solid transparent;
+	position: relative;
+}
+.card-product:hover {
+	background: #fff;
+	border-right: 3px solid #56B0B8;
+	border-left: 3px solid #56B0B8; 
+	border-top: 3px solid #56B0B8;
+}
+.card-product-horiz:hover {
+	border-bottom: 3px solid #56B0B8;
+}
+
+.card-overflow {
+	display: none;
+	position: absolute;
+	background: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	left: -3px;
+	right: -3px;
+	z-index: 99;
+	border-right: 3px solid #56B0B8;
+	border-left: 3px solid #56B0B8; 
+	border-bottom: 3px solid #56B0B8;
+}
+.card-product:hover .card-overflow {
+	display: block;
+}
+.overlay-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0000004f;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	transition: .3s;
+}
+.card-product:hover .overlay-img {
+	opacity: 1;
+	visibility: visible;
+	transition: .3s;
+}
+.i-eye {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.card-portfolio .btn-m {
+	padding: 7px 10px;
+}
+@media (max-width: 767px) {
+	.card-product-horiz .p {
+		font-size: 14px;
+	}
+	.card-product-horiz .tdl {
+		font-size: 13px;
+	}
+}
+@media (max-width: 575px) {
+	.card-product-horiz .p {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,89 @@
+input {
+	border: 1px solid transparent;
+	border-radius: 0;
+	box-shadow: none;
+	padding: 8px 14px;
+}
+.form-subscr input {
+	padding: 11px;
+	background: transparent;
+	border: 1px solid #56B0B8;
+	border-radius: 5px 0px 0px 5px;
+	color: #fff;
+}
+.form-subscr input::placeholder {
+	font-style: italic;
+}
+.form-subscr .text-white::placeholder {
+	color: #fff;
+}
+.form-subscr input:focus {
+	outline: none;
+}
+.form-subscr .btn {
+	border-radius: 0px 5px 5px 0px;
+}
+.form-order input,
+.form-order textarea {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin-bottom: .5rem;
+	padding: 8px 15px;
+
+}
+.form-order textarea {
+	min-height: 100px;
+}
+.form-order select {
+	border: 1px solid rgba(0, 0, 0, 0.5)!important;
+	width: 100%!important;
+	color: #8D8D8D!important;
+	padding: 10px 30px 7px 10px!important;
+	margin-bottom: .5rem;
+	background: url(../img/arr-black-bot.png) no-repeat right 3.5% center!important;
+}
+.form-order .input {
+	position: relative;
+}
+.form-order input,
+.form-order select {
+	padding-left: 150px!important;
+	font-style: italic;
+}
+.form-order .input-min input {
+	padding-left: 15px!important;
+}
+.form-order label {
+	position: absolute;
+    top: 9px;
+    left: 15px;
+    color: #7f7f7f;
+}
+.form-value input {
+	padding-left: 15px!important;
+	text-align: center;
+}
+.input-min {
+	min-width: 150px;
+}
+@media (max-width: 991px) {
+	.form-order label {
+		position: static;
+	    font-size: 14px;
+	    color: #8D8D8D;
+	    margin-bottom: 0;
+	}
+	.form-order input, .form-order select {
+	    padding-left: 15px!important; 
+	}
+}
+@media (max-width: 575px)  {
+	.form-order input, .form-order select {
+	    padding: 8px 5px!important;
+	    font-size: 13px;
+	}
+	input,
+	.form-order textarea {
+	    font-size: 13px;
+	}
+}

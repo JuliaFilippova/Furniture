@@ -1,0 +1,23 @@
+.scroll-block {
+    overflow: hidden;
+}
+.scroll-content {
+    max-height: 240px;
+    overflow-y: auto;
+}
+.scroll-content::-webkit-scrollbar {
+    height: 6px;
+    width: 9px;
+}
+.scroll-content::-webkit-scrollbar-track {
+    background: #F2F2F2;
+    border-radius: 0;
+}
+.scroll-content::-webkit-scrollbar-thumb {
+    background: #0F3043;
+    border-radius: 5px;
+    width: 44px;
+    height: 15px;
+    padding: 10px;
+
+}

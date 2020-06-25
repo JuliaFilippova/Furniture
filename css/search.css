@@ -1,0 +1,19 @@
+.search {
+	position: relative;
+}
+.search input {
+	font-style: italic;
+}
+.btn-search {
+	border: none;
+    background: none;
+    position: absolute;
+    right: .8rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+@media (max-width: 767px) {
+	.search input {
+		font-size: 12px;
+	}
+}

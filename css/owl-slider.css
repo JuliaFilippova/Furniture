@@ -1,0 +1,27 @@
+.owl-out .thumbs {
+    width: 25%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.owl-out .owl-carousel {
+    width: 70%;
+    margin-left: auto;
+}
+button.thumb {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    opacity: .7;
+}
+button.thumb.active {
+    opacity: 1;
+    border: 3px solid #56B0B8;
+}
+button.thumb:hover{
+    box-shadow: 0 0 10px #ccc;
+}
